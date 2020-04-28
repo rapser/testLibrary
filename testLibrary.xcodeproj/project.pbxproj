@@ -16,6 +16,7 @@
 		464B86EE2457ED9700EF7791 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 464B86ED2457ED9700EF7791 /* Assets.xcassets */; };
 		464B86F12457ED9700EF7791 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 464B86F02457ED9700EF7791 /* Preview Assets.xcassets */; };
 		464B86F42457ED9700EF7791 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 464B86F22457ED9700EF7791 /* LaunchScreen.storyboard */; };
+		464B86FA2457F47000EF7791 /* testLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 464B86F92457F47000EF7791 /* testLibrary.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +44,7 @@
 		464B86F02457ED9700EF7791 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		464B86F32457ED9700EF7791 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		464B86F52457ED9700EF7791 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		464B86F92457F47000EF7791 /* testLibrary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testLibrary.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 			children = (
 				464B86CA2457EB4D00EF7791 /* testLibrary.h */,
 				464B86CB2457EB4D00EF7791 /* Info.plist */,
+				464B86F92457F47000EF7791 /* testLibrary.swift */,
 			);
 			path = testLibrary;
 			sourceTree = "<group>";
@@ -210,6 +213,7 @@
 				TargetAttributes = {
 					464B86C62457EB4D00EF7791 = {
 						CreatedOnToolsVersion = 11.3.1;
+						LastSwiftMigration = 1130;
 					};
 					464B86D52457EBC700EF7791 = {
 						CreatedOnToolsVersion = 11.3.1;
@@ -271,6 +275,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				464B86FA2457F47000EF7791 /* testLibrary.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -437,6 +442,7 @@
 		464B86D02457EB4D00EF7791 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = P6FCYRT7JM;
@@ -453,6 +459,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.rapser.testLibrary;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -461,6 +468,7 @@
 		464B86D12457EB4D00EF7791 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = P6FCYRT7JM;
@@ -485,6 +493,7 @@
 		464B86DF2457EBC800EF7791 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = P6FCYRT7JM;
 				INFOPLIST_FILE = testLibraryTests/Info.plist;
@@ -503,6 +512,7 @@
 		464B86E02457EBC800EF7791 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = P6FCYRT7JM;
 				INFOPLIST_FILE = testLibraryTests/Info.plist;

@@ -7,15 +7,27 @@
 //
 
 import XCTest
+@testable import testLibrary
 
 class testLibraryTests: XCTestCase {
+    
+    var testLibrary1: testLibrary!
 
     override func setUp() {
         // Put setup code here. This method is called before the invocation of each test method in the class.
+        testLibrary1 = testLibrary()
     }
 
     override func tearDown() {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
+    }
+    
+    func testAdd(){
+        XCTAssertEqual(testLibrary1.add(a: 3, b: 4), 7)
+    }
+    
+    func testSub(){
+        XCTAssertEqual(testLibrary1.sub(a: 8, b: 5), 3)
     }
 
     func testExample() {
